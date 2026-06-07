@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #fff;
+        }
+        .top-nav {
+            text-align: right;
+            padding: 15px 30px;
+        }
+        .top-nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        .top-nav a:hover {
+            text-decoration: underline;
+        }
+        .main-box {
+            text-align: center;
+            margin-top: 80px;
+        }
+        .logo {
+            font-size: 60px;
+            font-weight: bold;
+            color: #2319dc;
+            letter-spacing: 5px;
+            margin-bottom: 30px;
+        }
+        .search-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .search-input {
+            width: 500px;
+            height: 40px;
+            padding: 0 15px;
+            border: 1px solid #ccc;
+            border-right: none;
+            font-size: 16px;
+            outline: none;
+        }
+        .search-btn {
+            height: 40px;
+            width: 100px;
+            background-color: #2319dc;
+            color: #fff;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .search-btn:hover {
+            background-color: #1a14b0;
+        }
+        .hot-event {
+            width: 600px;
+            margin: 0 auto;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .hot-title {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 15px;
+            text-align: left;
+            border-left: 4px solid #2319dc;
+            padding-left: 10px;
+        }
+        .hot-list {
+            list-style: none;
+            text-align: left;
+        }
+        .hot-list li {
+            line-height: 2.2;
+            font-size: 15px;
+        }
+        .hot-list li a {
+            color: #000;
+            text-decoration: none;
+        }
+        .hot-list li a:hover {
+            color: #2319dc;
+            text-decoration: underline;
+        }
+        .rank {
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .rank1 {background: #f53f3f;}
+        .rank2 {background: #ff7800;}
+        .rank3 {background: #ffb400;}
+        .rank-other {background: #999;}
+    </style>
+</head>
+<body>
+    <div class="top-nav">
+        <a href="#">新闻</a>
+        <a href="#">地图</a>
+        <a href="#">视频</a>
+        <a href="#">贴吧</a>
+        <a href="#">学术</a>
+    </div>
+
+    <div class="main-box">
+        <div class="logo">百度</div>
+        <div class="search-wrap">
+            <input type="text" class="search-input" placeholder="请输入搜索内容">
+            <button class="search-btn">百度一下</button>
+        </div>
+
+        <div class="hot-event">
+            <div class="hot-title">实时热点</div>
+            <ul class="hot-list">
+                <li>
+                    <span class="rank rank1">1</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">南安一学生在厕所撸管被发现</a>
+                </li>
+                <li>
+                    <span class="rank rank2">2</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">国内多款新品数码产品正式发布</a>
+                </li>
+                <li>
+                    <span class="rank rank3">3</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">高校春季运动会陆续举办，青春氛围拉满</a>
+                </li>
+                <li>
+                    <span class="rank rank-other">4</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">美食探店热潮兴起，各地特色小吃走红网络</a>
+                </li>
+                <li>
+                    <span class="rank rank-other">5</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">全民健身普及，户外运动成为主流休闲方式</a>
+                </li>
+                <li>
+                    <span class="rank rank-other">6</span>
+                    <a href="https://www.bilibili.com/video/BV1fN2wBSEvq/?spm_id_from=333.337.search-card.all.click" target="_blank">热门影视综艺持续热播，话题度居高不下</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
